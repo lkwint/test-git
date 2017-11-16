@@ -10,26 +10,77 @@
 
     <!-- Normalize and Resets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-    <link rel="stylesheet" href="lib/styles/main.css">
 
-    <!-- Custom Styles -->
+   <!-- Custom Styles -->
     <link rel="stylesheet" href="styles/010-resets.css">
     <link rel="stylesheet" href="styles/020-base.css">
     <link rel="stylesheet" href="styles/030-typography.css">
     <link rel="stylesheet" href="styles/040-layout.css">
     <link rel="stylesheet" href="styles/050-components.css">
+    <link rel="stylesheet" href="lib/styles/main.css">
+
+    <style>
+
+        html {
+            color: #222;
+            font-size: 1em;
+            line-height: 1.4;
+        }
+
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: white;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: lightgray;
+        }
+
+        .active {
+            background-color: lightblue;
+        }
+    </style>
+
 </head>
 
 <body>
     <header class="site-header">
         <nav class="site-header__navigation">
         </nav>
+        <ul>
+            <li><a class="active" href="#home">Unternehmen</a></li>
+            <li><a href="#news">Investor Relations</a></li>
+            <li><a href="#contact">Newsroom</a></li>
+            <li><a href="#about">Verantwortung</a></li>
+            <li><a href="#about">Karriere</a></li>
+        </ul>
+
         <section class="section content">
             <h1 class="title">Die wichtigste Überschrift.</h1>
         </section>
     </header>
 
     <main>
+
+
+
+
         <section class="section content">
             <header class="section__header">
                 <h2 class="title">Ich bin eine Bereichsüberschrift.</h2>
