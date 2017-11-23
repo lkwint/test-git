@@ -1,178 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-
+    <head>
 
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
     <title>Testseite Challange </title>
 
     <!-- Normalize and Resets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="lib/styles/main.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
-   <!-- Custom Styles -->
-    <link rel="stylesheet" href="lib/styles/main.css">
+
+        <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
 
-    <style>
-      /*background-image: url("images/bild.jpg");*/
+    </head>
 
-        html {
+    <body>
 
-            color: #222;
-            font-size: 1em;
-            font-family: 'Open Sans', sans-serif;
-               line-height: 1.4;
-        }
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0; 
-            overflow: hidden;
-            background-color: white;
-        }
+    <header class="site-header">
+        <h1 class="title">Neue Bank</h1>
 
-        li {
-            float: left;
-        }
+        <nav>
+                <ul class="site_navigation_header">
+                     <li><a  href="/Unternehmen/">Unternehmen</a> </li>
+                    <li><a  href="/Nachrichten/">Nachrichten</a> </li>
+                    <li><a  href="/Karriere/">Karriere</a></li>
+                    <li><a  href="/Investoren/">Investoren</a></li>
+                    <li><a  href="/Verantwortung/">Verantwortung</a></li>
+                    <li> <a  href="/Research/">Research</a></li>
+                </ul>
 
-        li a {
-            display: block;
-            color: black;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        li a:hover:not(.active) {
-            background-color: lightgray;
-        }
-      .button {
-          background-color: #4CAF50; /* Green */
-          border: none;
-          color: white;
-          padding: 15px 32px;
-          text-align: center;
-          text-decoration: none;
-          display: inline-block;
-          font-size: 16px;
-          margin: 4px 2px;
-          cursor: pointer;
-      }
-        .active {
-            background-color: lightblue;
-            font-weight: bold;
-        }
-         div.boxes {
-             float: left;
-             width: 32%;
-             margin-right: 2%;
-             padding: 20px;
-             background: #eee;
-             box-sizing: border-box;
-      }
-         div.boxes3{
-             margin-right: 0;
-             float: left;
-             width: 32%;
-             padding: 20px;
-             background: #eee;
-             box-sizing: border-box;
-
-         }
-
-        #logo{
-            width: 250px;
-            height: 160px;
-            float: left;
-            margin-right: 1em;
-
-        }
-        #backgroundimage{
-
-            opacity: 0.9;
-            width:100%;
-            height:30%;
-        }
-      .image {
-          position: relative;
-          width: 100%; /* for IE 6 */
-      }
-
-      h2 {
-          position: absolute;
-          top: 200px;
-          left: 0;
-          width: 100%;
-      }
-      h2 span {
-          color: white;
-          font: bold 45px Helvetica, Sans-Serif;
-          letter-spacing: -1px;
-          background: rgb(0, 0, 0); /* fallback color */
-          background: rgba(0, 0, 0, 0.1);
-          padding-bottom: 10px;
-          margin-left:100px;
-        }
-      h1.title {
-          margin-left:400px;
-          overflow: auto;
-          padding-top: 60px;
-      }
-
-        .site-header{
-            margin-top:50px;
-            margin-left: 400px;
-
-        }
-    </style>
-
-</head>
-
-<body>
-
-
-        <section class="section content">
-            <img id="logo" src="images/globe-compass-logo.png"  >
-
-            <h1 class="title"> Willkommen.Hier starten die hellsten Köpfe</h1>
-
-        </section>
-
-        <header class="site-header">
-        <nav class="site-header__navigation">
         </nav>
 
-        <div>
-        <ul>
-            <li><a class="active" href="#home">Unternehmen</a></li>
-            <li><a href="#news">Investor Relations</a></li>
-            <li><a href="#contact">Newsroom</a></li>
-            <li><a href="#about">Verantwortung</a></li>
-            <li><a href="#about">Karriere</a></li>
-        </ul>
-        </div>
+
+
+        <ul class="site_navigation">
+
+                 <li><a class="active" href="#home">Unternehmen</a></li>
+                <li><a href="#news">Investor Relations</a></li>
+                <li><a href="#contact">Newsroom</a></li>
+                <li><a href="#about">Verantwortung</a></li>
+                <li><a href="#about">Karriere</a></li>
+             </ul>
+        <img id="logo" src="images/globe-compass-logo.png" width="180px" height="120px" >
+
 
     </header>
 
         <div class="image">
-        <img id="backgroundimage" src="images/bild.jpg" >
+        <img id="backgroundimage" src="images/milky-way-2695569_1920.jpg" height="530" width="1425">
 
-            <h2><span> Noch nicht bei uns beworben? Es ist noch nicht zu spät. </span></h2>
-
+            <div class="in_image">
+                <h2><span> Noch nicht bei uns beworben? Es ist noch nicht zu spät. </span></h2>
             <div class="boxes"><b>Schulabgänger?</b><p> Hier können helle Köpfe durchstarten!</p>
                 <button class="button">Hier</button>
             </div>
-            <div class="boxes"><b>Student? Absolvent?</b>
+
+            <div class="boxes" id="box_student"><b>Student? Absolvent?</b>
                 <p>Aktuelle Informationen finden Sie hier</p>
                 <button class="button">Hier</button>
             </div>
-            <div class="boxes3"><b>Berufserfahrener?</b><p> Wir haben einen guten Job für Sie!</p>
-                <button class="button">Hier</button>
+            <div class="boxes3"id="berufserfahrener"><b>Berufserfahrener?</b><p> Wir haben einen guten Job für Sie!</p>
+                <button class="button" id="Beruf_button">Hier</button>
             </div>
-
+        </div>
         </div>
 
         </section>
@@ -180,13 +76,15 @@
 
         </nav>
     </main>
-  </div>
 
 
 
-
+    <hr>
     <footer class="footer">
         <section class="section content">
+            <div id="footer_box">
+
+            </div>
 
         </section>
     </footer>
